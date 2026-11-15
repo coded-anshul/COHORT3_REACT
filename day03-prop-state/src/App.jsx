@@ -23,17 +23,27 @@
 
 // export default App
 
-import React from 'react'
-import Navbar from './Navbar'
-import Hero from './components/Hero'
-import Footer from './components/Footer'
+// import Navbar from './Navbar'
+// import Hero from './components/Hero'
+// import Footer from './components/Footer'
+
+
+import React, { useState } from 'react'
 
 const App = () => {
+
+  let [count, setCount] = useState(0);
+  
+  
+
+
   return (
     <div>
-      <Navbar/>
-      <Hero/>
-      <Footer/>
+      <h1>Count is - {count}</h1>
+      <button onClick={() => {
+        
+        setCount(count+1);
+      }}>Increment</button>
     </div>
   )
 }
