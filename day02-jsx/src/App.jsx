@@ -1,10 +1,11 @@
-import About from "./About";
-import React from "react";
-let App = () => {
-  return <div>
-    <h1>hello</h1>
-    <About/>
-  </div>;
+import React from 'react'
+
+const App = () => {
+  return (
+    <div>
+      <h1>hey i am app</h1>
+    </div>
+  )
 }
 
-export default App;
+export default App
