@@ -56,6 +56,15 @@ const Register = ({ setToggle }) => {
           placeholder="Password"
           onChange={handleChange}
         />
+        <input
+          required
+          value={formData.password}
+          name="image"
+          className="p-2 border border-gray-400 rounded"
+          type="url"
+          placeholder="image"
+          onChange={handleChange}
+        />
         <button className="p-2 bg-blue-600 text-white rounded">Register</button>
       </form>
       <p>
